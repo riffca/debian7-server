@@ -67,6 +67,17 @@ apt-get install php5-common libapache2-mod-php5 php5-cli
 http://php.net/manual/ru/install.unix.debian.php
 
 ```
+##mysql
+###5.5
+```bash
+	apt-get purge mysql-server mysql-client
+
+```
+http://dbadiaries.com/how-to-install-mysql-5-5-on-ubuntu-server-12-04-lts
+
+```bash
+sudo apt-get install mysql-server
+```
 
 ##mysql addition
 https://ariejan.net/2007/12/12/how-to-install-mysql-on-ubuntudebian/
@@ -99,3 +110,6 @@ sudo apt-get upgrade
 sudo apt-get install php5 
 
 ``
+
+##Issues
+https://www.howtoforge.com/community/threads/mysql-server-problem-after-upgrading.65479/
