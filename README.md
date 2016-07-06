@@ -1,10 +1,10 @@
 #How to install Debian 7
 
-
 ```bash
 apt-get install sudo
 ```
-## Настройка судо
+
+## Настройка sudo
 http://debian-help.ru/articles/ustanovka-i-nastroika-sudo-v-debian-7/
 
 ```bash
@@ -16,31 +16,40 @@ sudo service apache2 start
 sudo service apache2 restart
 ```
 
-#Создание хоста
-#https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
-#sudo mkdir /var/www/test.com/public
-#nano /var/www/test.com/public/index.html
-#nano /etc/apache2/sites-available/test.com.conf
-#nano /etc/apache2/sites-available/default
-#открой и посмотри настойки
+##Create new host listening another than :80 port
+https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
 
-listen 2111
-<VirtualHost *:2111>
-    #ServerAdmin riffca@ya.ru
-    #ServerName riffca.pserver.ru
-    #ServerAlias www.pserver.ru
-    DocumentRoot /var/www/example.com/public
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-#запуск приложения на порту
+
+```bash
+sudo mkdir /var/www/test.com/public
+nano /var/www/test.com/public/index.html
+nano /etc/apache2/sites-available/test.com.conf
+nano /etc/apache2/sites-available/default
+```
+P.S.открой default
+
+```xml
+
+	listen 2111
+	<VirtualHost *:2111>
+	    #ServerAdmin riffca@ya.ru
+	    #ServerName riffca.pserver.ru(доменное имя)
+	    #ServerAlias www.pserver.ru
+	    DocumentRoot /var/www/example.com/public
+	    ErrorLog ${APACHE_LOG_DIR}/error.log
+	    CustomLog ${APACHE_LOG_DIR}/access.log combined
+	</VirtualHost>
+
+```
+
+##запуск приложения на порту
 sudo a2ensite test.com.conf
 sudo service apache2 restart
 
+```bash
 nano etc/hosts
-
 185.118.164.55 riffca.pserver.ru
-
+```bash
 #install php 5.4
 
 apt-get install php5-common libapache2-mod-php5 php5-cli
