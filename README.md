@@ -126,7 +126,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install php5 
 
-``
+```
 ##ad ftp-server
 http://iantonov.me/page/ustanovka-i-nastrojka-vsftpd-v-debian-7
 ```bash
@@ -136,12 +136,12 @@ apt-get install vsftpd
 
 ##composer install
 
-``bash
 http://onedev.net/post/176
-```
+``bash
 cd ~
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/bin/composer
+```
 
 
 ##Issues
