@@ -17,18 +17,21 @@ sudo service apache2 start
 sudo service apache2 restart
 ```
 
-##New host not default:80 port
+##New host not default:80 port and same domain
 
 https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
 
+check default host file
+
 ```bash
+nano /etc/apache2/sites-available/default
+```
+create new dir and host file
 sudo mkdir /var/www/test.com/public
 nano /var/www/test.com/public/index.html
 nano /etc/apache2/sites-available/test.com.conf
-nano /etc/apache2/sites-available/default
 ```
-P.S.check default
-
+host example
 ```xml
 
 	listen 2111
