@@ -68,12 +68,16 @@ http://php.net/manual/ru/install.unix.debian.php
 
 ```
 
-##msql config addition
-https://habrahabr.ru/post/20736/
+##mysql addition
+https://ariejan.net/2007/12/12/how-to-install-mysql-on-ubuntudebian/
+http://linux-notes.org/ustanovka-mysql-na-debian-ubuntu-linux-mint/
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-debian
+http://iantonov.me/page/nastraivaem-lamp-linux-apache-mysql-php-v-debian-7
 ```bash
 sudo apt-get install php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql php-image-graph imagemagick
 ```
 ##update php to 5.6
+https://habrahabr.ru/post/20736/
 
 ```bash
 sudo nano /etc/apt/sources.list
