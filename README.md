@@ -2,6 +2,14 @@
 
 ```bash
 apt-get install sudo
+apt-get install curl
+
+```
+
+##nodejs
+```bash
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
 ## Sudo settings
@@ -9,7 +17,6 @@ http://debian-help.ru/articles/ustanovka-i-nastroika-sudo-v-debian-7/
 
 
 ```bash
-apt-get install curl
 
 sudo apt-get install apache2
 sudo service apache2 stop
@@ -68,11 +75,21 @@ http://php.net/manual/ru/install.unix.debian.php
 
 ```
 ##mysql
-###5.5
+
 ```bash
 	apt-get purge mysql-server mysql-client
+	//solve err
+	//mysql-server-5.5
+```
+##phpmyadmin
+```bash
+sudo apt-get install phpmyadmin
+sudo nano /etc/apache2/apache2.conf
+//Include /etc/phpmyadmin/apache.conf
+sudo service apache2 restart
 
 ```
+
 http://dbadiaries.com/how-to-install-mysql-5-5-on-ubuntu-server-12-04-lts
 
 ```bash
@@ -110,6 +127,12 @@ sudo apt-get upgrade
 sudo apt-get install php5 
 
 ``
+##ad ftp-server
+http://iantonov.me/page/ustanovka-i-nastrojka-vsftpd-v-debian-7
+```bash
+apt-get install vsftpd
+
+```
 
 ##Issues
 https://www.howtoforge.com/community/threads/mysql-server-problem-after-upgrading.65479/
