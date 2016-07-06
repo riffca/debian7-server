@@ -4,8 +4,9 @@
 apt-get install sudo
 ```
 
-## Настройка sudo
+## Sudo settings
 http://debian-help.ru/articles/ustanovka-i-nastroika-sudo-v-debian-7/
+
 
 ```bash
 apt-get install curl
@@ -16,9 +17,9 @@ sudo service apache2 start
 sudo service apache2 restart
 ```
 
-##Create new host listening another than :80 port
-https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
+##New host not default:80 port
 
+https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
 
 ```bash
 sudo mkdir /var/www/test.com/public
@@ -26,7 +27,7 @@ nano /var/www/test.com/public/index.html
 nano /etc/apache2/sites-available/test.com.conf
 nano /etc/apache2/sites-available/default
 ```
-P.S.открой default
+P.S.check default
 
 ```xml
 
@@ -42,39 +43,52 @@ P.S.открой default
 
 ```
 
-##запуск приложения на порту
+##run port
+
+```bash
 sudo a2ensite test.com.conf
 sudo service apache2 restart
+```
+##создание отличных IP адресов
 
 ```bash
 nano etc/hosts
 185.118.164.55 riffca.pserver.ru
-```bash
-#install php 5.4
+```
+##install php 5.4
 
+```bash
 apt-get install php5-common libapache2-mod-php5 php5-cli
 
-#more config controll
-#http://php.net/manual/ru/install.unix.debian.php
+//more config controll
+http://php.net/manual/ru/install.unix.debian.php
 
-#msql config addition
-#https://habrahabr.ru/post/20736/
-#sudo apt-get install php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql php-image-graph imagemagick
+```
 
-#update php to 5.6
+##msql config addition
+https://habrahabr.ru/post/20736/
+```bash
+sudo apt-get install php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql php-image-graph imagemagick
+```
+##update php to 5.6
 
-
+```bash
 sudo nano /etc/apt/sources.list
+```
+add text
 
-#add
-
+```bash
 deb http://packages.dotdeb.org wheezy all
 deb-src http://packages.dotdeb.org wheezy all
 deb http://packages.dotdeb.org wheezy-php56-zts all
 deb-src http://packages.dotdeb.org wheezy-php56-zts all
 
-#save and run
+```
+save and run
 
+```bash
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install php5 
+
+``
