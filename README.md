@@ -134,5 +134,18 @@ apt-get install vsftpd
 
 ```
 
+##composer install
+http://onedev.net/post/176
+
+``bash
+
+
+
+```
+cd ~
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/bin/composer
+
+
 ##Issues
 https://www.howtoforge.com/community/threads/mysql-server-problem-after-upgrading.65479/
