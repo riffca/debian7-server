@@ -1,21 +1,45 @@
 #How to install Debian 7
 
-#get debian version
-#apt-get install lsb-release(if not lsb_release)
 
-lsb_release -da
-#aptitude install sudo
-#http://www.ducea.com/2006/05/18/install-sudo-on-debian/
-
+```bash
 apt-get install sudo
-#настройка судо
-#http://debian-help.ru/articles/ustanovka-i-nastroika-sudo-v-debian-7/
+```
+## Настройка судо
+http://debian-help.ru/articles/ustanovka-i-nastroika-sudo-v-debian-7/
+
+```bash
 apt-get install curl
 
 sudo apt-get install apache2
 sudo service apache2 stop
 sudo service apache2 start
 sudo service apache2 restart
+```
+
+#Создание хоста
+#https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
+#sudo mkdir /var/www/test.com/public
+#nano /var/www/test.com/public/index.html
+#nano /etc/apache2/sites-available/test.com.conf
+#nano /etc/apache2/sites-available/default
+#открой и посмотри настойки
+
+listen 2111
+<VirtualHost *:2111>
+    #ServerAdmin riffca@ya.ru
+    #ServerName riffca.pserver.ru
+    #ServerAlias www.pserver.ru
+    DocumentRoot /var/www/example.com/public
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+#запуск приложения на порту
+sudo a2ensite test.com.conf
+sudo service apache2 restart
+
+nano etc/hosts
+
+185.118.164.55 riffca.pserver.ru
 
 #install php 5.4
 
