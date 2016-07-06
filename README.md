@@ -135,12 +135,9 @@ apt-get install vsftpd
 ```
 
 ##composer install
-http://onedev.net/post/176
 
 ``bash
-
-
-
+http://onedev.net/post/176
 ```
 cd ~
 curl -sS https://getcomposer.org/installer | php
