@@ -1,2 +1,2 @@
-sudo rm -rf mydir -удалить директорию	
+sudo rm -fr mydir -удалить директорию	
 sudo nano file - открыть файл

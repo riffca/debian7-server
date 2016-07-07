@@ -27,6 +27,7 @@ sudo service apache2 restart
 ##New host not default:80 port and same domain
 
 https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
+https://serversforhackers.com/configuring-apache-virtual-hosts
 
 check default host file
 
@@ -34,6 +35,7 @@ check default host file
 nano /etc/apache2/sites-available/default
 ```
 create new dir and host file
+```bash
 sudo mkdir /var/www/test.com/public
 nano /var/www/test.com/public/index.html
 nano /etc/apache2/sites-available/test.com.conf
@@ -127,8 +129,10 @@ sudo apt-get upgrade
 sudo apt-get install php5 
 
 ```
-##ad ftp-server
+##ad ftp-server(lunix adduser)
 http://iantonov.me/page/ustanovka-i-nastrojka-vsftpd-v-debian-7
+http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users
+
 ```bash
 apt-get install vsftpd
 
@@ -143,6 +147,38 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/bin/composer
 ```
 
+##module rewrite
+http://ru.stackoverflow.com/questions/47021/%D0%9A%D0%B0%D0%BA-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-mod-rewrite
+
 
 ##Issues
 https://www.howtoforge.com/community/threads/mysql-server-problem-after-upgrading.65479/
+
+##linux copy folder
+http://www.cyberciti.biz/faq/copy-folder-linux-command-line/
+
+
+##Создать дизайн
+http://younglinux.info/book/export/html/10
+
+
+##Показ всех файлов
+```bash
+http://stackoverflow.com/questions/1019116/using-ls-to-list-directories-and-their-total-sizes
+```
+##Mysql новые пользователи
+http://www.liquidweb.com/kb/create-a-mysql-user-on-linux-via-command-line/
+```bash
+mysql -u root -p
+```
+##Все команды в одном файле
+
+write
+```bash
+/dir/#cat comands
+```
+run
+
+```
+/dir/#sh comands
+```bash
