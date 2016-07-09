@@ -182,3 +182,8 @@ run
 ```
 /dir/#sh comands
 ```bash
+
+##shh screen оставляем процессы в интернете
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server
+
+http://help.ubuntu.ru/wiki/screen

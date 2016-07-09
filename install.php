@@ -1,6 +1,7 @@
 <?php
 
-	echo "adduser admin";
-	echo "adduser quest";
-
-	echo "mkdir /how"
+	system("adduser admin");
+	system("adduser quest");
+	system('');
+	
+	echo "mkdir /how";

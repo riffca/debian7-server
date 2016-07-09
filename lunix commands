@@ -1,2 +1,3 @@
-sudo rm -fr mydir -удалить директорию	
+userdel -f <user> -удалить usera с директорией
+sudo rm -rf mydir -удалить директорию	
 sudo nano file - открыть файл
