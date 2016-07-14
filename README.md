@@ -197,5 +197,8 @@ http://www.tech-notes.net/proxypass-requests-with-apache/
 ##Фронтенд на ngnix
 https://habrahabr.ru/post/120814/
 
+
+##ngnix на frontend
+https://habrahabr.ru/post/120814/
 ##Скрипт для управления host на ngnix
 https://habrahabr.ru/post/202348/
