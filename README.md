@@ -178,16 +178,15 @@ write
 ```
 run
 
-```
-/dir/#sh comands
 ```bash
+/dir/#sh comands
+
+
+```
 
 ##shh screen оставляем процессы в интернете
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server
-
 http://help.ubuntu.ru/wiki/screen
-
-
 
 ##Proxypass
 http://geckich.blogspot.ru/2011/11/modproxy-apache.html
@@ -196,8 +195,8 @@ http://www.tech-notes.net/proxypass-requests-with-apache/
 ##Фронтенд на ngnix
 https://habrahabr.ru/post/120814/
 
-
 ##ngnix на frontend
 https://habrahabr.ru/post/120814/
+
 ##Скрипт для управления host на ngnix
 https://habrahabr.ru/post/202348/
